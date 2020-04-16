@@ -1,0 +1,455 @@
+/* Стили: начало */
+*{
+    padding: 0;
+    margin: 0;
+}
+.all_page {
+    animation: manifestation 3s 7s forwards, visibility 0.1s 6.8s forwards;
+    opacity: 0;
+    visibility: hidden;
+    width: 1920px;
+    height: 100%;
+}
+.bg {
+    animation: fade 3s 7s forwards;
+    position: absolute;
+    background-image: url(../imgs/bg.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    width: 1920px;
+    height: 100%;
+}
+.shapka {
+    animation: shapka 1s 8s forwards;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 1920px;
+    height: 60px;
+    background: rgba(0,0,0,.5);
+    border-bottom: 3px solid red;
+}
+.city {
+    animation: manifestation 1s 8.75s forwards, visibility 0.1s 8.75s forwards, translateX_ci_and_del 1s 8.75s forwards;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: blue;
+    width: 90px;
+    height: 36px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.city a {
+    text-align: center;
+    margin-top: 9px;
+    width: 100%;
+    height: 100%;
+}
+.delivery {
+    animation: manifestation 2s 8.5s forwards, visibility 1s 8.5s forwards, translateX_ci_and_del 1s 8.5s forwards;
+    opacity: 0;
+    visibility: hidden;
+    margin-left: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: blue;
+    width: 90px;
+    height: 36px;
+    vertical-align: middle;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.delivery a {
+    text-align: center;
+    margin-top: 9px;
+    width: 100%;
+    height: 100%;
+}
+.link {
+    color: black;
+    text-decoration: none;
+    font-family: 'comic sans ms', serif;
+}
+.link:hover {
+    text-decoration: underline;
+}
+.main {
+    /*background: white;*/
+    width: 1920px;
+    height: 912px;
+}
+.top {
+    position: relative;
+    /*background: blue;*/
+    margin: 0 auto;
+    height: 500px;
+    width: 1920px;
+}
+.logo {
+    position: absolute;
+    /*background: black;*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 490px;
+    width: 600px;
+}
+.logo_img {
+    animation: manifestation 3s 9s forwards, visibility 0.1s 8.8s forwards;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+    height: 468px;
+    width: 500px;
+}
+.bot {
+    position: relative;
+    margin: 0 auto;
+    height: 412px;
+    width: 1920px;
+}
+.navigation {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 400px;
+    width: 800px;
+}
+.navigation_new {
+    animation: manifestation 1s 10s forwards, visibility 0.1s 9.8s forwards;
+    opacity: 0;
+    visibility: hidden;
+    float: left;
+    position: relative;
+    height: 400px;
+    width: 400px;
+}
+.navigation_popular {
+    animation: manifestation 1s 10s forwards, visibility 0.1s 9.8s forwards;
+    opacity: 0;
+    visibility: hidden;
+    float: right;
+    position: relative;
+    height: 400px;
+    width: 400px;
+}
+.new {
+    display: flex;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: white;
+    width: 300px;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.new:hover {
+    animation: brighten 0.5s ease-in-out forwards;
+}
+.new:not(:hover) {
+    animation: fade 0.5s ease-in-out forwards;
+}
+.new a {
+    width: 300px;
+    height: 150px;
+    text-decoration: none;
+}
+.new a p {
+    position: absolute;
+    font-size: 63px;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    height: 72px;
+}
+.popular {
+    display: flex;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: white;
+    width: 300px;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.popular:hover {
+    animation: brighten 0.5s ease-in-out forwards;
+}
+.popular:not(:hover) {
+    animation: fade 0.5s ease-in-out forwards;
+}
+.popular a {
+    width: 300px;
+    height: 150px;
+    text-decoration: none;
+}
+.popular a p {
+    position: absolute;
+    font-size: 48px;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    height: 57px;
+}
+/* Стили: конец */
+
+
+
+/* Анимации: начало */
+@keyframes manifestation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes visibility {
+    100% {visibility: visible;}
+}
+@keyframes fade {
+    0% {filter: brightness(100%);}
+    100% {filter: brightness(40%);}
+}
+@keyframes brighten {
+    0% {filter: brightness(40%);}
+    100% {filter: brightness(100%);}
+}
+@keyframes translateX_ci_and_del {
+    0% {transform: translateX(-1000px);}
+    75% {transform: translateX(10px);}
+    100% {transform: translateX(0px);}
+}
+@keyframes shapka {
+    0% {transform: translateY(-63px);
+        visibility: hidden;}
+    100% {transform: translateY(0px);
+          visibility: visible;}
+    100% {transform: translateY(0px);
+          visibility: visible;}
+}
+/* Анимации: конец */
+
+
+
+/* Прелоадер: начало */
+#load {
+    position:absolute;
+    width:600px;
+    height:36px;
+    left:50%;
+    top:49%;
+    margin-left:-300px;
+    overflow:visible;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor:default;
+}
+
+#load div {
+    position:absolute;
+    width:100px;
+    height:100px;
+    opacity:0;
+    font-size: 30px;
+    font-family:Helvetica, Arial, sans-serif;
+    animation:move 2s linear 3;
+    -o-animation:move 2s linear 3;
+    -moz-animation:move 2s linear 3;
+    -webkit-animation:move 2s linear 3;
+    transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    color:#35C4F0;
+}
+
+#load div:nth-child(2) {
+    animation-delay:0.2s;
+    -o-animation-delay:0.2s;
+    -moz-animation-delay:0.2s;
+    -webkit-animation-delay:0.2s;
+}
+#load div:nth-child(3) {
+    animation-delay:0.4s;
+    -o-animation-delay:0.4s;
+    -webkit-animation-delay:0.4s;
+    -webkit-animation-delay:0.4s;
+}
+#load div:nth-child(4) {
+    animation-delay:0.6s;
+    -o-animation-delay:0.6s;
+    -moz-animation-delay:0.6s;
+    -webkit-animation-delay:0.6s;
+}
+#load div:nth-child(5) {
+    animation-delay:0.8s;
+    -o-animation-delay:0.8s;
+    -moz-animation-delay:0.8s;
+    -webkit-animation-delay:0.8s;
+}
+#load div:nth-child(6) {
+    animation-delay:1s;
+    -o-animation-delay:1s;
+    -moz-animation-delay:1s;
+    -webkit-animation-delay:1s;
+}
+#load div:nth-child(7) {
+    animation-delay:1.2s;
+    -o-animation-delay:1.2s;
+    -moz-animation-delay:1.2s;
+    -webkit-animation-delay:1.2s;
+}
+#load div:nth-child(8) {
+    animation-delay:1.4s;
+    -o-animation-delay:1.4s;
+    -moz-animation-delay:1.4s;
+    -webkit-animation-delay:1.4s;
+}
+
+@keyframes move {
+    0% {
+        left:0;
+        opacity:0;
+    }
+    35% {
+        left: 41%; 
+        -moz-transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);
+        opacity:1;
+    }
+    65% {
+        left:59%; 
+        -moz-transform:rotate(0deg); 
+        -webkit-transform:rotate(0deg); 
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg); 
+        opacity:1;
+    }
+    100% {
+        left:100%; 
+        -moz-transform:rotate(-180deg); 
+        -webkit-transform:rotate(-180deg); 
+        -o-transform:rotate(-180deg); 
+        transform:rotate(-180deg);
+        opacity:0;
+    }
+}
+
+@-moz-keyframes move {
+    0% {
+        left:0; 
+        opacity:0;
+    }
+    35% {
+        left:41%; 
+        -moz-transform:rotate(0deg); 
+        transform:rotate(0deg);
+        opacity:1;
+    }
+    65% {
+        left:59%; 
+        -moz-transform:rotate(0deg); 
+        transform:rotate(0deg);
+        opacity:1;
+    }
+    100% {
+        left:100%; 
+        -moz-transform:rotate(-180deg); 
+        transform:rotate(-180deg);
+        opacity:0;
+    }
+}
+
+@-webkit-keyframes move {
+    0% {
+        left:0; 
+        opacity:0;
+    }
+    35% {
+        left:41%; 
+        -webkit-transform:rotate(0deg); 
+        transform:rotate(0deg); 
+        opacity:1;
+    }
+    65% {
+        left:59%; 
+        -webkit-transform:rotate(0deg); 
+        transform:rotate(0deg); 
+        opacity:1;
+    }
+    100% {
+        left:100%;
+        -webkit-transform:rotate(-180deg); 
+        transform:rotate(-180deg); 
+        opacity:0;
+    }
+}
+
+@-o-keyframes move {
+    0% {
+        left:0; 
+        opacity:0;
+    }
+    35% {
+        left:41%; 
+        -o-transform:rotate(0deg); 
+        transform:rotate(0deg); 
+        opacity:1;
+    }
+    65% {
+        left:59%; 
+        -o-transform:rotate(0deg); 
+        transform:rotate(0deg); 
+        opacity:1;
+    }
+    100% {
+        left:100%; 
+        -o-transform:rotate(-180deg); 
+        transform:rotate(-180deg); 
+        opacity:0;
+    }
+}
+/* Прелоадер: конец */
